@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: zazreco
+primary: true
+siteGroup: e38a9c6d-beee-4ccd-9112-9a44f3b726fe # zazreco
+sortOrder: 1

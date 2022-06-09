@@ -1,0 +1,89 @@
+fieldLayouts:
+  425a246d-9378-479a-8263-3f6564141b14:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 595598cf-c9ef-49a7-b278-2288cf8a3d5b # Discipline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5df523b7-7e8c-4517-8956-cdd275fa88cb
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 616d8f9e-989f-47ea-a661-24656e0c2304
+            warning: null
+            width: 100
+          -
+            fieldUid: aa64dddc-26a1-4527-94ea-74e971bb7b02 # External Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a10dc86-0e20-4e49-9f7e-445928b212d3
+            warning: null
+            width: 100
+          -
+            fieldUid: be50f752-b6f6-4de9-a21d-bcbe3fa5b7c9 # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7caa5848-b165-4b6e-abc4-e1b80d73e98c
+            warning: null
+            width: 100
+          -
+            fieldUid: 58c307ce-4553-4c78-b416-1ce32e9b228b # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e66bc96-34bb-4971-a96f-d357d2a3a28c
+            warning: null
+            width: 100
+          -
+            fieldUid: 04a727e0-f88c-490d-82ab-878d3f6e673e # Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c32b973-fcb9-4755-8be8-c0377df76a0a
+            warning: null
+            width: 100
+        name: Content
+        uid: 11aafda0-ce1c-48bb-8ebc-fed4f43b654f
+handle: default
+hasTitleField: true
+name: Default
+section: dde2c85c-5bb1-4b04-8c74-39491bb12c88 # Projects
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

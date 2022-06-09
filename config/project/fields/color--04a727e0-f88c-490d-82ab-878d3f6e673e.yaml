@@ -1,0 +1,12 @@
+columnSuffix: pkmmecos
+contentColumnType: string(7)
+fieldGroup: 3eacee74-3afb-4968-a14b-4fb8b8035546 # Common
+handle: color
+instructions: null
+name: Color
+searchable: false
+settings:
+  defaultColor: '#20e7d6'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

@@ -1,0 +1,19 @@
+columnSuffix: suwnbgyh
+contentColumnType: text
+fieldGroup: 3eacee74-3afb-4968-a14b-4fb8b8035546 # Common
+handle: discipline
+instructions: null
+name: Discipline
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

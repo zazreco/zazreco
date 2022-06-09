@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  24f2dcb8-63d1-4381-88c2-6a00dc080773: # zazreco
+    enabledByDefault: true
+    hasUrls: true
+    template: home/index
+    uriFormat: __home__
+type: single

@@ -1,0 +1,61 @@
+dateModified: 1654690437
+email:
+  fromEmail: zackreid@outlook.com
+  fromName: zazreco
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  projects:
+    hasUrls: true
+    name: Projects
+    settings:
+      path: /web/img/projects
+    type: craft\fs\Local
+    url: /img/projects
+meta:
+  __names__:
+    3eacee74-3afb-4968-a14b-4fb8b8035546: Common # Common
+    04a727e0-f88c-490d-82ab-878d3f6e673e: Color # Color
+    24f2dcb8-63d1-4381-88c2-6a00dc080773: zazreco # zazreco
+    58c307ce-4553-4c78-b416-1ce32e9b228b: Image # Image
+    78acf90d-e4eb-48de-a292-18549b79c4b9: Home # Home
+    985bfda1-59ed-4431-854b-2d7aeafe985f: Projects # Projects
+    5544e175-a6da-429c-b0d7-a4bbe157672d: Home # Home
+    595598cf-c9ef-49a7-b278-2288cf8a3d5b: Discipline # Discipline
+    0856402b-c53b-4ed4-850a-456f6d37df97: Portfolio # Portfolio
+    aa64dddc-26a1-4527-94ea-74e971bb7b02: 'External Link' # External Link
+    be50f752-b6f6-4de9-a21d-bcbe3fa5b7c9: Intro # Intro
+    c04aafc2-89e1-481b-aada-e8dc93555e1b: Default # Default
+    d496ac5c-04e4-49f3-94e5-ca565c4b2812: Bio # Bio
+    dde2c85c-5bb1-4b04-8c74-39491bb12c88: Projects # Projects
+    e38a9c6d-beee-4ccd-9112-9a44f3b726fe: zazreco # zazreco
+    ec6ef604-edb5-46cd-94bc-e4172ca67063: Portfolio # Portfolio
+plugins:
+  instagramfeed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      dump: false
+      instagramUser: zazreco
+      proxyKey: ''
+      subpath: ''
+      timeout: 10
+      useProxy: false
+      useVolume: false
+      volume: projects
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: zazreco
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

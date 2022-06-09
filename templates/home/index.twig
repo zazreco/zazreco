@@ -1,0 +1,161 @@
+{% extends '_includes/layout' %}
+
+{% set projects = craft.entries().section('projects').orderBy('dateUpdated DESC').all() %}
+
+{% set first = projects|first %}
+{# {% set image = first.heroImage.one() %} #}
+
+{% block main %}
+	{% embed '_includes/containers/padded' %}
+		{% block children %}
+			<div class="m-8 relative space-y-4">
+				<div class="noise-bg z-0"></div>
+			</div>
+			<div class="mt-80 mb-36">
+				<h1 class="font-bold text-4xl leading-tight">
+					Hi there, <br /> I’m <span class="text-primary">Zack Reid</span>
+				</h1>
+			</div>
+
+			<div class="md:flex gap-8">
+				<div class="bg md:w-1/3">
+					<p class="w-52">
+						A UI/UX Designer and Web developer from Belfast!
+					</p>
+					<div class="mt-24">
+						<img class="" src="https://source.unsplash.com/random/780x750" alt="" />
+					</div>
+				</div>
+				<div class="mt-8 md:mt-0 md:flex-1">
+					<img class="" src="https://source.unsplash.com/random/780x400" alt="" />
+					<div class="relative w-full max-w-lg">
+						<div class="-z-50 absolute top-0 right-0 w-72 h-72 bg-circle rounded-full filter blur-2xl animate-blob animation-delay-4000"></div>
+					</div>
+				</div>
+			</div>
+
+			<section id="projects" class="mt-20 pt-20 space-y-8">
+				<div class="grid md:grid-cols-2 gap-x-8 mb-14 md:mb-24">
+					<h2 class="font-medium text-3xl text-primary">
+						Projects
+					</h2>
+
+					<p class="mt-4 md:mt-0 w-96">
+						I have lead and colaberated on many projects throughtout view the live sites now.
+					</p>
+				</div>
+
+				{# first Item #}
+				<div class="flex flex-col-reverse md:flex-row gap-8 p-6 md:p-14"
+					style="background-color: {{ first.color }}">
+					<div class="flex items-start flex-col md:w-1/3 justify-between">
+						<div>
+							<div class="prose text-white">
+								{{ first.discipline }}
+							</div>
+							<h3 class="text-2xl font-medium leading-tight">
+								{{ first.title }}
+							</h3>
+							<div class="prose mt-4 text-white">
+								{{ first.intro }}
+							</div>
+						</div>
+						<a class="mt-8 md:mt-0 bg-primary items-start w-auto py-2 px-6 hover:bg-primaryHover rounded-full"
+							href="{{ first.externalLink }}"
+							target="_blank">
+							View Site
+						</a>
+					</div>
+					<div class="flex-1">
+						<img class="" src="https://source.unsplash.com/random/780x440" alt="" />
+					</div>
+				</div>
+				{# END first Item #}
+				{# the remaining Items #}
+				<div class="grid md:grid-cols-2 gap-8">
+					{# {% for entry in projects[2:] %} #}
+					{% for entry in projects[1:] %}
+						{% include 'projects/_includes/card' %}
+					{% endfor %}
+				</div>
+				{# the remaining Items #}
+			</section>
+
+			<section class="mt-40 space-y-8">
+				<h2 class="font-medium text-3xl text-primary">
+					About Me
+				</h2>
+
+				<div class="md:flex gap-8">
+					<div class="bg md:w-1/3">
+						<div class="prose text-white">
+							{{ entry.bio }}
+						</div>
+					</div>
+					<div class="mt-8 md:mt-0 md:flex-1">
+						<img class="" src="https://source.unsplash.com/random/780x540" alt="" />
+						<div class="relative w-full max-w-lg">
+							<div class="-z-50 absolute bottom-0 -left-14 w-96 h-96 bg-circle rounded-full filter blur-2xl animate-blob animation-delay-4000"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="social">
+				<div class="grid md:grid-cols-2 gap-x-8 mt-20 pt-20 mb-24">
+					<h2 class="font-medium text-3xl text-primary">
+						Social Experiments
+					</h2>
+
+					<div class="flex flex-col items-start">
+						<p class="">
+							Sense the start of this year I have been running an instagram under the handle, <a class="text-primary underline font-medium"
+								href="https://www.instagram.com/zazreco/?hl=en"
+								target="_blank">
+								Zazreco
+							</a>, experimenting with layouts, typography, colours, responsivene design. I took this time to
+							learn figma like the back of my hand as well. With this I have also been running a page for
+							inspiration called,
+							<a class="text-primary underline font-medium"
+								href="https://www.instagram.com/showcase_ui/?hl=en"
+								target="_blank">
+								Showcase UI
+							</a> to stay up todate with the current standared of work and to help find inspiration when I need it.
+						</p>
+						<a class="mt-12 bg-primary w-auto py-2 px-6 hover:bg-primaryHover rounded-full"
+							href="https://www.instagram.com/zazreco/?hl=en"
+							target="_blank">
+							View instagram
+						</a>
+					</div>
+				</div>
+				<div class="grid md:grid-cols-3 gap-8 mb-24">
+					{% for item in craft.instagram.getFeed() %}
+						{% if loop.index <= 6 %}
+							<a href="https://www.instagram.com/p/{{ item.shortcode }}/"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img src="{{ item.thumbnail }}" alt="" />
+							</a>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</section>
+
+			<section id="contact" class="my-96 flex flex-col items-center justify-center">
+				<h2 class="font-medium text-3xl text-white">
+					Say hey
+				</h2>
+
+				<h1 class="text-3xl md:text-4xl font-bold text-primary" target="_blank">
+					hello@zazreco.com
+				</h1>
+
+				<button type="button"
+					class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+					Purple to Blue
+				</button>
+			</section>
+		{% endblock %}
+	{% endembed %}
+{% endblock %}

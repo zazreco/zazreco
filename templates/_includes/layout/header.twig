@@ -1,0 +1,32 @@
+<header>
+	{% embed '_includes/containers/padded'
+		with {
+			innerClass: 'grid grid-cols-3 pt-8'
+		}
+	%}
+		{% block children %}
+			<a class="relative hover:text-primary group hover:font-medium ease-in-out duration-200"
+				href="https://drive.google.com/file/d/13oi6gOuyTxcFfp21x8PonC-LjII0M5ZD/view?usp=sharing"
+				target="_blank">
+				Digital CV <span class="absolute group-hover:opacity-100 opacity-0 ml-2 ease-in-out duration-200">📝</span>
+			</a>
+
+			<a class="flex justify-center text-primary font-bold text-2xl hover:stroke-white hover:font-medium ease-in-out duration-200"
+				href="#top">
+				ZR
+			</a>
+
+			<nav class="flex flex-col items-end">
+				<a class="relative hover:text-primary group hover:font-medium ease-in-out duration-200" href="#projects">
+					Projects <span class="absolute group-hover:opacity-100 opacity-0 ml-2 ease-in-out duration-200">👈</span>
+				</a>
+				<a class="relative hover:text-primary group hover:font-medium ease-in-out duration-200" href="#social">
+					Social <span class="absolute group-hover:opacity-100 opacity-0 ml-2 ease-in-out duration-200">👈</span>
+				</a>
+				<a class="relative hover:text-primary group hover:font-medium ease-in-out duration-200" href="#contact">
+					Contact <span class="absolute group-hover:opacity-100 opacity-0 ml-2 ease-in-out duration-200">👈</span>
+				</a>
+			</nav>
+		{% endblock %}
+	{% endembed %}
+</header>
